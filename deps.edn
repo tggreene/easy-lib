@@ -16,5 +16,5 @@
         :exec-fn hf.depstar/jar
         :exec-args {:jar "target/easy-lib.jar"}}
   :release
-  {:extra-deps {applied-science/deps-library {:mvn/version "0.4.0"}}
+  {:replace-deps {applied-science/deps-library {:mvn/version "0.4.0"}}
    :main-opts ["-m" "applied-science.deps-library"]}}}
