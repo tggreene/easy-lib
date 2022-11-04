@@ -1,0 +1,3 @@
+{:group-id "com.github.tggreene"
+ :artifact-id "clj-template.easy-lib"
+ :scm-url "https://github.com/tggreene/easy-lib"}

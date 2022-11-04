@@ -1,0 +1,3 @@
+{:group-id "{{scm-group}}"
+ :artifact-id "{{name}}"
+ :scm-url "{{scm-url}}"}
