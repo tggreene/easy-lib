@@ -1,18 +1,28 @@
+init:
+  @if [[ -d '.git' ]]; then \
+    echo "Already initialized" ; \
+  else \
+    git init ; \
+    git add . ; \
+    git commit -m "Initial commit" ; \
+    git tag v0.1.0 ; \
+    git remote add origin git@github.com:tggreene/easy-system.git ; \
+  fi
+
 test:
   clj -M:test:runner
 
 build:
-  clj -X:jar
-
-release:
-  clj -M:release
+  clj -M:release jar
 
 release-major:
-  clj -M:release major
+  clj -M:release --major
 
-initialize:
-  git init
-  git add .
-  git commit -m 'Initial commit'
-  git tag v0.1.0
-  git remote add origin git@{{scm-domain}}:{{group}}/{{name}}.git
+release-minor:
+  clj -M:release --minor
+
+release-patch:
+  clj -M:release --patch
+
+install:
+  clj -M:release install
