@@ -1,33 +1,16 @@
 # easy-lib
 
-A small template for libraries using applied-science/deps-library
+A small template for libraries using [deps-library](https://github.com/applied-science/deps-library) and [just](https://github.com/casey/just) to keep things simple.
 
 ## Usage
 
-FIXME: write usage documentation!
-
-Creating a project from this template (the `:new` alias in this template project defaults `:template` to easy-lib):
+Create a project from this template. Use your github username as the group name
+here.
 
 ```bash
-    clojure -X:new create :name myname/myproject
+    clj -X:project/new :template com.github.tggreene/easy-lib :name myname/myproject
+    # OR
+    clj -Tclj-new create :template com.github.tggreene/easy-lib :name myname/myproject
+    # Then
     cd myproject
 ```
-
-Build a deployable jar of this template:
-
-    $ clojure -X:jar
-
-Install it locally:
-
-    $ clojure -M:install
-
-Deploy it to Clojars -- needs `CLOJARS_USERNAME` and `CLOJARS_PASSWORD` environment variables:
-
-    $ clojure -M:deploy
-
-## License
-
-Copyright © 2022 Tim
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
