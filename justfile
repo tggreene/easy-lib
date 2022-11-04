@@ -1,7 +1,14 @@
+release:
+  clj -M:release
+
+release-major:
+  clj -M:release --major
+
+release-minor:
+  clj -M:release --minor
+
+release-patch:
+  clj -M:release --patch
+
 install:
-  just build
   clj -M:release install
-
-build:
-  clj -X:jar
-
