@@ -24,4 +24,4 @@
              ["justfile" (render "justfile" data)]
              [".gitignore" (render ".gitignore" data)]
              ["LICENSE" (render "LICENSE" data)]
-             ["src/{{nested-dirs}}/{{name}}.clj" (render "foo.clj" data)])))
+             ["src/{{nested-dirs}}.clj" (render "foo.clj" data)])))
