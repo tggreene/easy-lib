@@ -15,6 +15,9 @@ test:
 build:
   clj -M:release jar
 
+release:
+  clj -M:release
+
 release-major:
   clj -M:release --major
 
